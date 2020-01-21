@@ -17,8 +17,20 @@ namespace Shapes_ChunFeiJohnnyTiu
         // Constructors
 
         // Methods
-        public void CalculateArea(IShape shape) {
-            area = shape.CalculateArea();
+        public void CalculateArea(IShape shape) 
+        {
+            switch (shape.getShapeName())
+            {
+                case "Circle":
+                    area = shape.calculateArea1(radius);
+                    break;
+                case "Square":
+                    area = shape.calculateArea1(length);
+                    break;
+                case "Rectangle":
+                    area = shape.calculateArea2(length, width);
+                    break;
+            }
         }
 
 

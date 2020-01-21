@@ -35,29 +35,11 @@ namespace Shapes_ChunFeiJohnnyTiu
         }
 
         // Get Parameter
-        public double getParameter() {
-            double param = Int32.Parse(Console.ReadLine());
-            return param;
-        }
-
-        // Get Radius
-        public double getRadius() {
-            Console.WriteLine("Please enter your circle radius: ");
-            return getParameter();
-        }
-
-        // Get Length
-        public double getLength()
+        public double getParameter(string param) 
         {
-            Console.WriteLine("Please enter your length: ");
-            return getParameter();
-        }
-
-        // Get Width
-        public double getWidth()
-        {
-            Console.WriteLine("Please enter your width: ");
-            return getParameter();
+            Console.Write($"Enter your {param}: ");
+            double enteredParam = double.Parse(Console.ReadLine());
+            return enteredParam;
         }
     }
 }

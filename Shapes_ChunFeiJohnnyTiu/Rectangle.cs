@@ -8,23 +8,19 @@ namespace Shapes_ChunFeiJohnnyTiu
 {
     internal class Rectangle : IShape
     {
-        // Properties
-        double length;
-        double width;
-        double area;
-
-        // Constructors
-
         // Methods
-        public double CalculateArea()
+        public double calculateArea1(double param1)
         {
-            area = length * width;
-            return area;
+            return 0;
         }
 
-        public double getArea()
+        public double calculateArea2(double param1, double param2)
         {
-            return area;
+            return (param1 * param2);
+        }
+
+        public string getShapeName() {
+            return "Rectangle";
         }
     }
 }

@@ -8,8 +8,9 @@ namespace Shapes_ChunFeiJohnnyTiu
 {
     internal interface IShape
     {
-        double CalculateArea();
-        double getArea();
+        // Methods
+        double calculateArea1(double param1);
+        double calculateArea2(double param1, double param2);
         string getShapeName();
     }
 }

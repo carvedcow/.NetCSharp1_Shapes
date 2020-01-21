@@ -8,21 +8,19 @@ namespace Shapes_ChunFeiJohnnyTiu
 {
     internal class Circle : IShape
     {
-        // Properties
-        double radius;
-        double area;
 
-        // Constructors
 
         // Methods
-        public double CalculateArea() {
-            area = 2 * Math.PI * radius;
-            return area;
+        public double calculateArea1(double param1) {
+            return (2 * Math.PI * param1);
         }
 
-        public double getArea()
-        {
-            return area;
+        public double calculateArea2(double param1, double param2) {
+            return 0;
+        }
+
+        public string getShapeName() {
+            return "Circle";
         }
     }
 }

@@ -26,8 +26,29 @@ namespace Shapes_ChunFeiJohnnyTiu
                 IShape shape = display.getShape();
 
                 // Depending on shape, Get Param
+                switch (shape.getShapeName()) {
+                    case "Circle":
+                        canvas.radius = display.getParameter("circle's radius");
+                        break;
+                    case "Square":
+                        canvas.length = display.getParameter("square's length");
+                        break;
+                    case "Rectangle":
+                        canvas.length = display.getParameter("rectangle's length");
+                        canvas.width = display.getParameter("rectangle's width");
+                        break;
+                }
 
+                // Get Area from Canvas
+                canvas.CalculateArea(shape);
 
+                // Print Area
+                Console.WriteLine($"Your area is {canvas.area}.");
+
+                // Continue?
+                Console.Write("Continue: (Y/N)? ");
+                var contKey = Console.ReadKey();
+                toContinue = (contKey.Key == ConsoleKey.Y ? true : false);
             }
         }
     }

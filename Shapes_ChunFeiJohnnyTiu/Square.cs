@@ -8,22 +8,20 @@ namespace Shapes_ChunFeiJohnnyTiu
 {
     internal class Square : IShape
     {
-        // Properties
-        double length;
-        double area;
-
-        // Constructors
-
         // Methods
-        public double CalculateArea()
+        public double calculateArea1(double param1)
         {
-            area = length*length;
-            return area;
+            return (param1 * param1);
         }
 
-        public double getArea()
+        public double calculateArea2(double param1, double param2)
         {
-            return area;
+            return 0;
+        }
+
+        public string getShapeName()
+        {
+            return "Square";
         }
     }
 }
